@@ -2,9 +2,6 @@
 	box-sizing: border-box;
 	font-family: 'Ubuntu', sans-serif;
 }
-body{
-	margin: 0px;
-}
 [class*="col-"]{
 	width: 100%;
 }
@@ -48,89 +45,37 @@ body{
 .clear{
 	clear: both;
 }
-.wrapper{
-  	padding-bottom: calc(10rem - 56px);
-	background-image: url("header.jpg");
-  	background-position: center center;
-	background-size: cover;
+div{
+	border:1px solid;
 }
-.header{
-	border: 1px solid;
+.menu-items{
+	position: relative;
+	float: right;
+}
+.main{
+	text-align: center;
+	margin-top: 225px;
+	margin-bottom: 225px;
+}
+.main-btn-l{
+	text-align: right;
+}
+.main-btn-m{
+	text-align: center;
+}
+.main-btn-r{
+	text-align: left;
+}
+button.l{
+	width: 100px;
+}
+.title{
+	text-align: center;
 	padding: 50px 0px;
 }
-img.center {
-   display: block;
-   margin: auto auto;
-}
-ul.top-nav{
-	list-style-type: none;
-	overflow: hidden;
-	margin: 0px;
-}
-li.nav-item{
-	float: right;
-	padding: 2px 20px;
-}
-.topbar{
-	padding: 15px;
-}
-.logo{
-	text-align: right;
-	padding: 2px 5px;
-}
-.main-center{
-	text-align: center;
-	position: relative;
-	margin-top: 100px;
-	margin-bottom: 150px;
-	padding: 0px 150px;
-	font-size: 70px;
-}
-hr{
-	max-width: 75px;
-	border-width: 2px;
-	border-style: solid;
-	border-color: black;
-}
-a{
-	text-decoration: none;
-	color: black;
-}
-.btn-center{
-	text-align: center;
-}
-a.btn{
-	text-align: center;
-	font-weight: 700;
-	text-transform: uppercase;
-	border: none;
-	border-radius: 300px;
-}
-.btn-xl{
-	padding: 1.25rem 5rem;
-}
-.btn-primary{
-	background-color: #555555;
-	border-color: #555555;
-}
-button.btn{
-	font-weight: 700;
-	text-transform: uppercase;
-	border: none;
-	border-radius: 300px;
-	color: white;
-	font-size: 20px;
-}
-.heading{
-	text-align: center;
+.article{
+	margin:2px 100px;
 }
 .footer{
 	text-align: right;
-}
-.articles{
-	text-align: center;
-	
-}
-div{
-	border:1px solid;
 }
