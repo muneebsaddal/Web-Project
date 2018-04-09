@@ -1,0 +1,136 @@
+*{
+	box-sizing: border-box;
+	font-family: 'Ubuntu', sans-serif;
+}
+body{
+	margin: 0px;
+}
+[class*="col-"]{
+	width: 100%;
+}
+@media only screen and (min-width: 768px){
+	.col-1 {width: 8.33%;}
+	.col-2 {width: 16.66%;}
+	.col-3 {width: 25%;}
+	.col-4 {width: 33.33%;}
+	.col-5 {width: 41.66%;}
+	.col-6 {width: 50%;}
+	.col-7 {width: 58.33%;}
+	.col-8 {width: 66.66%;}
+	.col-9 {width: 75%;}
+	.col-10 {width: 83.33%;}
+	.col-11 {width: 91.66%;}
+	.col-12 {width: 100%;}
+}
+@media only screen and (min-width: 600px){
+	.col-t-1 {width: 8.33%;}
+	.col-t-2 {width: 16.66%;}
+	.col-t-3 {width: 25%;}
+	.col-t-4 {width: 33.33%;}
+	.col-t-5 {width: 41.66%;}
+	.col-t-6 {width: 50%;}
+	.col-t-7 {width: 58.33%;}
+	.col-t-8 {width: 66.66%;}
+	.col-t-9 {width: 75%;}
+	.col-t-10 {width: 83.33%;}
+	.col-t-11 {width: 91.66%;}
+	.col-t-12 {width: 100%;}
+}
+[class*="col-"]{
+	float: left;
+	padding: 0px;
+}
+.row::after{
+	content: "";
+	clear: both;
+	display: block;
+}
+.clear{
+	clear: both;
+}
+.wrapper{
+  	padding-bottom: calc(10rem - 56px);
+	background-image: url("header.jpg");
+  	background-position: center center;
+	background-size: cover;
+}
+.header{
+	border: 1px solid;
+	padding: 50px 0px;
+}
+img.center {
+   display: block;
+   margin: auto auto;
+}
+ul.top-nav{
+	list-style-type: none;
+	overflow: hidden;
+	margin: 0px;
+}
+li.nav-item{
+	float: right;
+	padding: 2px 20px;
+}
+.topbar{
+	padding: 15px;
+}
+.logo{
+	text-align: right;
+	padding: 2px 5px;
+}
+.main-center{
+	text-align: center;
+	position: relative;
+	margin-top: 100px;
+	margin-bottom: 150px;
+	padding: 0px 150px;
+	font-size: 70px;
+}
+hr{
+	max-width: 75px;
+	border-width: 2px;
+	border-style: solid;
+	border-color: black;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+.btn-center{
+	text-align: center;
+}
+a.btn{
+	text-align: center;
+	font-weight: 700;
+	text-transform: uppercase;
+	border: none;
+	border-radius: 300px;
+}
+.btn-xl{
+	padding: 1.25rem 5rem;
+}
+.btn-primary{
+	background-color: #555555;
+	border-color: #555555;
+}
+button.btn{
+	font-weight: 700;
+	text-transform: uppercase;
+	border: none;
+	border-radius: 300px;
+	color: white;
+	font-size: 20px;
+}
+.heading{
+	text-align: center;
+}
+.footer{
+	text-align: right;
+}
+.articles{
+	text-align: center;
+	
+}
+div{
+	border:1px solid;
+}
