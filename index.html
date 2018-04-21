@@ -1,100 +1,147 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en-US">
 <head>
-	<title>Homepage</title>
-	<link rel="stylesheet" type="text/css" href="styles.css">
-	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet"> 
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Home</title>
+<link href="css/singlePageTemplate.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
 </head>
-<div class="container">
-	
-<div class="row">
-	<div class="col-3 logo">
-		<h1>Logo</h1>
-	</div>
-	<div class="col-2 menu-items">
-		<h1>About</h1>
-	</div>
-	<div class="col-2 menu-items">
-		<h1>Contact</h1>
-	</div>
+<body>
+<!-- Main Container -->
+<div class="container"> 
+  <!-- Navigation -->
+  <header> <a href="">
+    <h4 class="logo">Car Shop</h4>
+  </a>
+    <nav>
+      <ul>
+        <li><a href="#hero">SHOP</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li> <a href="#contact">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2 class="hero_header">CAR SHOP</h2>
+    <p class="tag-line">Internet's Car Community</p>
+	</section>
+  <!-- Articles Section -->
+  <section class="articles">
+    <h1><strong> Latest </strong></h1>
+    <a href="article-1/article-1.html" class="article-link">
+    <div class="article">
+  		<hr>
+  		<section class="img"><img src="images/article-1.jpg" alt="" width="100%" height="100%"/></section>
+  		<section class="descrip"><section class="article-heading"><p>Vladimir Putin's New Limo Is 592bhp Of Armoured Russian Excess</p></section>
+  		<section class="article-detail"><p>Presidential limousines are usually a bit excessive by their very nature, but Russia's latest are completely custom-built with Porsche and Bosch</p></section>
+		</section>  	
+  	</div>
+  	</a>
+  	<div class="clear"></div>
+  	<section class="article-divide"><hr></section>
+  	<a href="article-2/article-2.html" class="article-link">
+  	<div class="article">
+  		<section class="img"><img src="images/article-2.jpg" alt="" width="100%" height="100%"/></section>
+  		<section class="descrip"><section class="article-heading"><p>Fredric Aasbo's New Ride Is A 1000bhp Toyota Auris Drift Machine</p></section>
+  		<section class="article-detail"><p>The Toyota Auris isn't exactly a car to get your pulse racing, but this one is a little different...</p></section>
+	  </section> 
+  	</div>
+  	</a>
+  	<div class="clear"></div>
+  	<section class="article-divide"><hr></section>
+  	<a href="article-3/article-3.html" class="article-link">
+	<div class="article">
+  		<section class="img"><img src="images/article-3.jpg" alt="" width="100%" height="100%"/></section>
+  		<section class="descrip"><section class="article-heading"><p>Don't Expect The New Toyota Supra To Be "A Cheap Car"</p></section>
+  		<section class="article-detail"><p>From the sounds of it, Toyota's new sports car won't be a bargain, but we probably shouldn't be surprised</p></section>
+	  </section> 
+  	</div>
+  	</a>
+  	<div class="clear"></div>
+  	<section class="article-divide"><hr></section>
+  	<a href="article-4/article-4.html" class="article-link">
+	<div class="article">
+  		<section class="img"><img src="images/article-4.jpg" alt="" width="100%" height="100%"/></section>
+  		<section class="descrip"><section class="article-heading"><p>The New M4-Engined BMW M2 Competition Has Killed Off The Standard Car</p></section>
+  		<section class="article-detail"><p>BMW's new M2 packs an 'S55' twin-turbo straight-six and an appetite for RS Audi TTs</p></section>
+	  </section> 
+  	</div>
+  	</a>
+  	<div class="clear"></div>
+  	<section class="article-divide"><hr></section>
+	<a href="article-5/article-5.html" class="article-link">
+	<div class="article">
+  		<section class="img"><img src="images/article-5.jpg" alt="" width="100%" height="100%"/></section>
+  		<section class="descrip"><section class="article-heading"><p>Tesla Is Halting Model 3 Production Yet Again To Fix Problems</p></section>
+  		<section class="article-detail"><p>Electric car maker Tesla has announced another temporary break in Model 3 production while yet more issues are addressed...</p></section>
+  		</section> 
+  	</div>
+  	</a>
+  	<div class="clear"></div>
+  </section>
+  
+  <!-- About Section
+  <section class="about" id="about">
+    <h2 class="hidden">About</h2>
+    <p class="text_column">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+    <p class="text_column">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+    <p class="text_column">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+  </section>
+  -->
+  <!-- Stats Gallery Section
+  <div class="gallery">
+    <div class="thumbnail">
+      <h1 class="stats">1500</h1>
+      <h4>TITLE</h4>
+      <p>One line description</p>
+    </div>
+    <div class="thumbnail">
+      <h1 class="stats">2300</h1>
+      <h4>TITLE</h4>
+      <p>One line description</p>
+    </div>
+    <div class="thumbnail">
+      <h1 class="stats">7500</h1>
+      <h4>TITLE</h4>
+      <p>One line description</p>
+    </div>
+    <div class="thumbnail">
+      <h1 class="stats">9870</h1>
+      <h4>TITLE</h4>
+      <p>One line description</p>
+    </div>
+  </div>-->
+  <!-- Parallax Section
+  <section class="banner">
+    <h2 class="parallax">PARALLAX HERO</h2>
+    <p class="parallax_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+  </section>-->
+  <!-- More Info Section
+  <footer>
+    <article class="footer_column">
+      <h3>ABOUT</h3>
+      <img src="images/placeholder.jpg" alt="" width="400" height="200" class="cards"/>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla </p>
+    </article>
+    <article class="footer_column">
+      <h3>LOCATION</h3>
+      <img src="images/placeholder.jpg" alt="" width="400" height="200" class="cards"/>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla </p>
+    </article>
+  </footer>-->
+  <!-- Footer Section
+  <section class="footer_banner" id="contact">
+    <h2 class="hidden">Footer Banner Section </h2>
+    <p class="hero_header">FOR THE LATEST NEWS &amp; UPDATES</p>
+    <div class="button">subscribe</div>
+  </section>-->
+  <div class="see-more"><h3>Load more</h3></div>
+  <!-- Copyrights Section -->
+  <div class="copyright">&copy;2015 - <strong>Light Theme</strong></div>
 </div>
-
-<div class="main">
-	<h1>Your Favorite Source of Free Bootstrap Themes</h1>
-</div>
-
-<div class="row">
-	<div class="col-4 main-btn-l">
-		<button class="l">Shop</button>
-	</div>
-	<div class="col-4 main-btn-m">
-		<button class="l">Latest</button>
-	</div>
-	<div class="col-4 main-btn-r">
-		<button class="l">Community</button>
-	</div>
-</div>
-
-<div class="title"><h1>Latest</h1></div>
-<div class="row article">
-	<div class="col-2 img">
-		<img src="FFFFFF.png" width="100%" height="100%">
-	</div>
-	<div class="col-10 descrip">
-		<p>Uneasy barton seeing remark happen his has. Am possible offering at contempt mr distance stronger an. Attachment excellence announcing or reasonable am on if indulgence. Exeter talked in agreed spirit no he unable do. Betrayed shutters in vicinity it unpacked in. In so impossible appearance considered mr. Mrs him left find are good. 
-</p>
-	</div>	
-</div>
-<div class="row article">
-	<div class="col-2 img">
-		<img src="FFFFFF.png" width="100%" height="100%">
-	</div>
-	<div class="col-10 descrip">
-		<p>Uneasy barton seeing remark happen his has. Am possible offering at contempt mr distance stronger an. Attachment excellence announcing or reasonable am on if indulgence. Exeter talked in agreed spirit no he unable do. Betrayed shutters in vicinity it unpacked in. In so impossible appearance considered mr. Mrs him left find are good. 
-</p>
-	</div>	
-</div>
-<div class="row article">
-	<div class="col-2 img">
-		<img src="FFFFFF.png" width="100%" height="100%">
-	</div>
-	<div class="col-10 descrip">
-		<p>Uneasy barton seeing remark happen his has. Am possible offering at contempt mr distance stronger an. Attachment excellence announcing or reasonable am on if indulgence. Exeter talked in agreed spirit no he unable do. Betrayed shutters in vicinity it unpacked in. In so impossible appearance considered mr. Mrs him left find are good. 
-</p>
-	</div>	
-</div>
-<div class="row article">
-	<div class="col-2 img">
-		<img src="FFFFFF.png" width="100%" height="100%">
-	</div>
-	<div class="col-10 descrip">
-		<p>Uneasy barton seeing remark happen his has. Am possible offering at contempt mr distance stronger an. Attachment excellence announcing or reasonable am on if indulgence. Exeter talked in agreed spirit no he unable do. Betrayed shutters in vicinity it unpacked in. In so impossible appearance considered mr. Mrs him left find are good. 
-</p>
-	</div>	
-</div>
-<div class="row article">
-	<div class="col-2 img">
-		<img src="FFFFFF.png" width="100%" height="100%">
-	</div>
-	<div class="col-10 descrip">
-		<p>Uneasy barton seeing remark happen his has. Am possible offering at contempt mr distance stronger an. Attachment excellence announcing or reasonable am on if indulgence. Exeter talked in agreed spirit no he unable do. Betrayed shutters in vicinity it unpacked in. In so impossible appearance considered mr. Mrs him left find are good. 
-</p>
-	</div>	
-</div>
-<div class="row article">
-	<div class="col-2 img">
-		<img src="FFFFFF.png" width="100%" height="100%">
-	</div>
-	<div class="col-10 descrip">
-		<p>Uneasy barton seeing remark happen his has. Am possible offering at contempt mr distance stronger an. Attachment excellence announcing or reasonable am on if indulgence. Exeter talked in agreed spirit no he unable do. Betrayed shutters in vicinity it unpacked in. In so impossible appearance considered mr. Mrs him left find are good. 
-</p>
-	</div>	
-</div>
-
-<div class="footer">
-		<h4>Copyrights. All rights reserved.</h4>
-</div>
-
-</div>
+<!-- Main Container Ends -->
+</body>
 </html>
