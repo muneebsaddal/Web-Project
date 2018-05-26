@@ -9,6 +9,7 @@ body {
 	margin-left: 0px;
 	font-style: normal;
 	font-weight: 200;
+	color: #eeeeee;
 }
 .container {
 	width: 100%;
@@ -24,7 +25,6 @@ header {
 .logo {
 	color: #fff;
 	font-weight: bold;
-	text-align: undefined;
 	width: 15%;
 	float: left;
 	margin-top: 15px;
@@ -48,7 +48,6 @@ nav ul li {
 	font-size: 14px;
 	text-align: left;
 	margin-right: 25px;
-	letter-spacing: 2px;
 	font-weight: bold;
 	transition: all 0.3s linear;
 }
@@ -64,10 +63,36 @@ ul li:hover a {
 	margin:auto;
 	text-align: center;
 }
+/* clear button in sidebar*/
+.button1 {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: #eeeeee;
+    padding: 5px 30px;
+    text-align: center;
+    width: 100%;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    -webkit-transition-duration: 0.3s; /* Safari */
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+.button11 {
+    background-color: #eeeeee;
+    color: black;
+    border: 2px solid #999999;
+}
+
+.button11:hover {
+	background-color: white;
+	border: 2px solid white;
+}
+
 .about-header {
 	width: 100%;
 	margin: auto;
-	background-color: #9f9f9f;
+	background-color: #111111;
 	padding-top: 80px;
 	padding-bottom: 75px;
 }
@@ -88,19 +113,20 @@ ul li:hover a {
 	clear: both;
 	overflow: auto;
 	padding-top: 5%;
-	width: 90%;
+	width: 95%;
 	margin:auto;
 }
 /* Sidebar */
 #content .sidebar {
 	float: left;
 	width: 20%;
-	padding-left: 3%;
-	padding-right: 3%;
-	text-align: center;
-	background-color: #d2d2d2;
-	padding-top: 36px;
-	height: 784px;
+	padding-left: 2%;
+	padding-right: 2%;
+	text-align: left;
+	background-color: #eeeeee;
+	padding-top: 2%;
+	height: 100%;
+	border-radius: 1%;
 }
 /* main content of the site */
 #content .mainContent {
@@ -112,20 +138,19 @@ ul li:hover a {
 /*menubar's properties for menus in sidebar */
 #content .sidebar #menubar {
 	text-align: left;
-	color: rgba(146,146,146,1.00);
+	color: rgba(100,100,100,1.00);
 	position: relative;
-	left: 0%;
 }
 /* Search field in sidebar */
 #content .sidebar #search {
 	width: 100%;
 	border-radius: 3px;
-	height: 4%;
+	height: 10%;
 	text-align: center;
-	color: rgba(208,207,207,1.00);
-	font-size: 14px;
-	;
-	margin-bottom: 21px;
+	color: rgba(100,100,100,0.7);
+	font-size: 20px;
+	font-weight: 500;
+	margin-bottom: 50px;
 }
 /* Whole page content */
 #mainWrapper {
@@ -148,13 +173,15 @@ ul li:hover a {
 /* Each product Information in the catalog */
 .mainContent .productRow .productInfo {
 	float: left;
-	padding-left: 5%;
-	padding-right: 5%;
-	width: 22%;
+	padding-left: 2%;
+	padding-right: 2%;
+	margin:3%;
+	width: 23%;
+	border:1px solid darkgrey;
 }
 /* Prices of a products in catalog */
 .productRow .productInfo .price {
-	color: rgba(146,146,146,1.00);
+	color: #333333;
 	font-size: 22px;
 	position: relative;
 	top: -20px;
@@ -166,7 +193,7 @@ ul li:hover a {
 	font-size: 14px;
 	font-style: normal;
 	font-weight: 200;
-	color: rgba(146,146,146,1.00);
+	color: #333333;
 	white-space: pre-wrap;
 }
 /* Buy button for products in catalog */
@@ -174,7 +201,7 @@ ul li:hover a {
 	position: relative;
 	top: -48px;
 	width: 84%;
-	background-color: rgba(208,207,207,1.00);
+	background-color: #222222;
 	height: 35px;
 	color: rgba(255,255,255,1.00);
 	border-style: none;
@@ -208,6 +235,57 @@ ul li:hover a {
 .sidebar #menubar .menu {
 	margin-bottom: 29px;
 }
+/* Cart */
+.cart-container{
+	padding-top: 2%;
+	color: black;
+}
+.cart-empty{
+	text-align: center;
+	width: 40%;
+	margin:auto;
+	border: 1px #dfdfdf;
+	border-right: 0px;
+	border-left: 0px;
+	padding:10px;
+	margin-top: 7%;
+	margin-bottom: 5%;
+}
+thead.cart-head{
+	background-color: #9f9f9f;
+	border:1px solid;
+}
+table.cart-table{
+	width: 70%;
+	margin-left:2%;
+}
+td.cart-back{
+	background-color: #dfdfdf;
+	padding-top:200px;
+}
+.button{
+	width: 20%;
+	margin-top: 40px;
+	margin-right: auto;
+	margin-bottom: 3%;
+	margin-left: auto;
+	padding-top: 20px;
+	padding-right: 10px;
+	padding-bottom: 20px;
+	padding-left: 10px;
+	text-align: center;
+	vertical-align: middle;
+	border-radius: 0px;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 2px;
+	border: 3px solid #222222;
+	color: #222222;
+	transition: all 0.3s linear;
+}
+a{
+	text-decoration: none;
+}
 /* Media query for tablets */
 @media screen and (max-width:700px) {
 	.logo {
@@ -221,10 +299,10 @@ ul li:hover a {
 	float: none;
 	overflow: auto;
 	display: inline-block;
-	background: #4f4f4f;
+	background: #2f2f2f;
 }
 header{
-	height: 90px;
+	height: 175px;
 }
 header nav ul {
 	padding: 0px;
@@ -297,8 +375,8 @@ nav ul li {
 /*The sidebar and maincontent of page */
 #content {
 	position: relative;
-	top: -22px;
-	width: 100%;
+	top: 0px;
+	width: 90%;
 	overflow: hidden;
 }
 /*menu headings in sidebar */
@@ -325,7 +403,7 @@ nav ul li {
 /* menus in sidebar */
 .sidebar #menubar .menu {
 	width: 100%;
-	text-align: center;
+	text-align: left;
 	position: relative;
 	top: 16px;
 }
@@ -334,18 +412,25 @@ nav ul li {
 	position: relative;
 	left: -7%;
 	overflow: hidden;
-	width: 95%;
+	width: 100%;
 	padding-top: 0px;
 }
 /* offer banners content */
 #mainWrapper #offer p {
 	font-size: small;
 }
+#content .mainContent {
+	width: 100%;
+	padding-left: 1%;
+}
 /* main content region of page */
 #mainWrapper #content .mainContent {
 	overflow: hidden;
 	width: 95%;
 	margin-top: 40px;
+}
+.mainContent .productRow .productInfo {
+    width: 39%;
 }
 /* Prices of products in catalog view */
 .productRow .productInfo .price {
@@ -422,6 +507,13 @@ header #headerLinks a {
 	padding-right: 15px;
 	padding-left: 0px;
 }
+header {
+    height: 57px;
+}
+.about-header {
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
 .logo {
 	width: 80%;
 	text-align: center;
@@ -494,7 +586,7 @@ nav ul li {
 }
 /* Each product in catalog view */
 .mainContent .productRow .productInfo {
-	width: 100%;
+	width: 97%;
 	display: block;
 	padding-left: 0px;
 	padding-right: 0px;
@@ -511,7 +603,7 @@ nav ul li {
 /* Unordered list for menu elements */
 .menu ul {
 	position: relative;
-	padding-left: 24%;
+	padding-left: 15%;
 }
 /* Container for links in footer */
 #mainWrapper footer .footerlinks {
