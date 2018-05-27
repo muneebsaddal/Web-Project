@@ -24,7 +24,6 @@ include_once("../config/config.php");
         <li><a href="shop_acc.php">ACCESSORIES</a></li>
         <li><a href="shop_main.php">NEW CARS</a></li>
         <li><a href="shop_used.php">USED CARS</a></li>
-        <li><a href="../cart/cart.php">CART</a></li>
       </ul>
     </nav>
   </header>
@@ -70,6 +69,7 @@ include_once("../config/config.php");
       $flag2 = 0;
       echo "<div class='productRow'>";
       while ($res = mysqli_fetch_array($result)){
+        $var1 = $res['ucar_id'];
         if($flag1%3 == 0 && $flag2 > 0){
           echo "</div><div class='productRow'>";
         }
@@ -77,7 +77,7 @@ include_once("../config/config.php");
         echo "<div> <img src='".$res['ucar_image']."'>"."</div>";
         echo "<p>".$res['ucar_name']."</p>";
         echo "<p class='price'>Rs.".$res['ucar_price']."</p>";
-        echo "<input type='button' name='button' value='Buy' class='buyButton'>";
+        echo "<form action='item_used.php' method='GET'><button type='submit' name='Buy' value='".$var1."' class='buyButton'>Buy</button></form>";
         echo "</article>";
         $flag1++;
         $flag2++;

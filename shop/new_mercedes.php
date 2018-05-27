@@ -24,7 +24,6 @@ include_once("../config/config.php");
         <li><a href="shop_acc.php">ACCESSORIES</a></li>
         <li><a href="shop_main.php">NEW CARS</a></li>
         <li><a href="shop_used.php">USED CARS</a></li>
-        <li><a href="../cart/cart.php">CART</a></li>
       </ul>
     </nav>
   </header>
